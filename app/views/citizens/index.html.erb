@@ -1,0 +1,18 @@
+<h1>Listing citizens</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for citizen in @citizens %>
+  <tr>
+    <td><%= link_to 'Show', citizen %></td>
+    <td><%= link_to 'Edit', edit_citizen_path(citizen) %></td>
+    <td><%= link_to 'Destroy', citizen, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New citizen', new_citizen_path %>
