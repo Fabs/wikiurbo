@@ -14,16 +14,9 @@ describe CitizensController do
       assigns[:citizens].should == [mock_citizen]
     end
 
-    describe "with mime type of xml" do
-  
-      it "should render all citizens as xml" do
-        request.env["HTTP_ACCEPT"] = "application/xml"
-        Citizen.should_receive(:find).with(:all).and_return(citizens = mock("Array of Citizens"))
-        citizens.should_receive(:to_xml).and_return("generated XML")
-        get :index
-        response.body.should == "generated XML"
-      end
-    
+    it "should render index" do
+      get :index
+      response.should render_template("index")
     end
 
   end
@@ -35,19 +28,13 @@ describe CitizensController do
       get :show, :id => "37"
       assigns[:citizen].should equal(mock_citizen)
     end
-    
-    describe "with mime type of xml" do
 
-      it "should render the requested citizen as xml" do
-        request.env["HTTP_ACCEPT"] = "application/xml"
-        Citizen.should_receive(:find).with("37").and_return(mock_citizen)
-        mock_citizen.should_receive(:to_xml).and_return("generated XML")
-        get :show, :id => "37"
-        response.body.should == "generated XML"
-      end
-
+    it "should render show" do
+      Citizen.should_receive(:find).with("37").and_return(mock_citizen)
+      get :show, :id => "37"
+      response.should render_template("show")
     end
-    
+        
   end
 
   describe "responding to GET new" do
@@ -56,6 +43,12 @@ describe CitizensController do
       Citizen.should_receive(:new).and_return(mock_citizen)
       get :new
       assigns[:citizen].should equal(mock_citizen)
+    end
+    
+    it "should render new" do
+      Citizen.should_receive(:new).and_return(mock_citizen)
+      get :new
+      response.should render_template("new")
     end
 
   end
@@ -66,6 +59,12 @@ describe CitizensController do
       Citizen.should_receive(:find).with("37").and_return(mock_citizen)
       get :edit, :id => "37"
       assigns[:citizen].should equal(mock_citizen)
+    end
+    
+    it "should render edit" do
+      Citizen.should_receive(:find).with("37").and_return(mock_citizen)
+      get :edit, :id => "37"
+      response.should render_template("edit")
     end
 
   end
