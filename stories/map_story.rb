@@ -1,23 +1,25 @@
 require File.expand_path(File.dirname(__FILE__) + "/helper")
 
-Story "Viewing the map", %{
-  As a citizen
+Story "Viewing the map and acessing the info", %{
+  As a user acessing the site
   I want to see a map 
   So that I can access the relative info from the places
 }, :type => RailsStory do
   
-  Scenario "not logged in citizen" do
-    Given "citizen is not logged in" do
-      pending "need a way to know if a citizen is logged in"
+  Scenario "not logged in user see a map" do
+    Given "user is not logged in" do
+      pending "need to set session[:current_user] as nil"
     end
     
     When "citizen access the homepage" do
-      pending "need a home controller"
+      get "/"
     end
     
-    Then "it should see a map" do
-      pending "need a index for the home controller"
+    Then "the page should show", "div#map_div" do |tag|
+      response.should have_tag(tag)
     end
+    And "the page should include javascript for the map"
+    And "the map should have the existent places"
   end
   
 end
