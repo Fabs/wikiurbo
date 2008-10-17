@@ -1,5 +1,10 @@
-<head>
-	<!-- For showing the map-->
-	<script src="/javascripts/ym4r-gm.js" type="text/javascript"></script>
-</head>
-<div id='map_div'></div>
+<html>
+	<head>
+		<%= GMap.header %>
+		<%= @map.to_html %>
+	</head>
+	<body>
+		<!-- <div id="map_div"> -->
+		<%= @map.div %>
+	</body>
+</html>

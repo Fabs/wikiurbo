@@ -4284,3 +4284,2179 @@ Processing CitizensController#index (for 0.0.0.0 at 2008-10-16 12:14:20) [GET]
   Parameters: {"action"=>"index", "controller"=>"citizens"}
 Rendering citizens/index
 Completed in 0.00036 (2753 reqs/sec) | Rendering: 0.00015 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-16 12:15:25) [GET]
+  Session ID: 5fb77fc135a7c6cd40dad98d8ac3489b
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00335 (298 reqs/sec) | Rendering: 0.00064 (19%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-16 12:16:25) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00267 (375 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-16 12:16:25) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00019 (5236 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-16 12:16:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00047 (2136 reqs/sec) | Rendering: 0.00020 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-16 12:16:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00055 (1807 reqs/sec) | Rendering: 0.00022 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-16 12:16:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00050 (1996 reqs/sec) | Rendering: 0.00020 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-16 12:16:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1006
+Completed in 0.00066 (1524 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-16 12:16:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1007
+Completed in 0.00103 (972 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-16 12:16:25) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00058 (1715 reqs/sec) | Rendering: 0.00022 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-16 12:16:25) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00053 (1872 reqs/sec) | Rendering: 0.00021 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-16 12:16:25) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00044 (2257 reqs/sec) | Rendering: 0.00018 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-16 12:16:25) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00043 (2299 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-16 12:16:25) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00060 (1658 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00045 (2227 reqs/sec) | Rendering: 0.00018 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00044 (2247 reqs/sec) | Rendering: 0.00020 (45%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00049 (2041 reqs/sec) | Rendering: 0.00025 (50%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00050 (1984 reqs/sec) | Rendering: 0.00028 (55%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00045 (2213 reqs/sec) | Rendering: 0.00019 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00045 (2218 reqs/sec) | Rendering: 0.00017 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;36;1mCitizen Load (0.000339)[0m   [0;1mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00111 (904 reqs/sec) | Rendering: 0.00017 (15%) | DB: 0.00034 (30%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-16 12:16:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00038 (2666 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+REQUESTING PAGE: GET /froobles/new with {}
+REQUESTING PAGE: GET /froobles/new with {}
+REQUESTING PAGE: GET /froobles/new with {}
+REQUESTING PAGE: GET /froobles/new with {}
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-17 08:57:36) [GET]
+  Session ID: 356b8e16b22ad07f5cb10eed9aa3c7b6
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.01747 (57 reqs/sec) | Rendering: 0.01379 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-17 08:58:49) [GET]
+  Session ID: 70e0d2cde6e4d38c5177d0d593d7af7e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00349 (286 reqs/sec) | Rendering: 0.00065 (18%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-17 20:50:26) [GET]
+  Session ID: 869127994b3774a69b5cd9949c95185e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00346 (289 reqs/sec) | Rendering: 0.00067 (19%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+  [4;36;1mCitizen Create (0.000486)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:07:55', '2008-10-17 23:07:55')[0m
+Rendering /citizens/edit.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:07:55) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00278 (359 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:07:55) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00020 (5047 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:07:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00047 (2109 reqs/sec) | Rendering: 0.00021 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:07:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.08758 (11 reqs/sec) | Rendering: 0.00031 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:07:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00049 (2028 reqs/sec) | Rendering: 0.00019 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:07:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00046 (2165 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:07:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00043 (2319 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:07:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00051 (1953 reqs/sec) | Rendering: 0.00024 (46%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:07:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00046 (2173 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:07:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00043 (2299 reqs/sec) | Rendering: 0.00018 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:07:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00041 (2462 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:07:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1017
+Completed in 0.00037 (2688 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:07:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2353 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:07:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00039 (2551 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00040 (2525 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00038 (2603 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00045 (2202 reqs/sec) | Rendering: 0.00021 (47%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00042 (2385 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000190)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00080 (1246 reqs/sec) | Rendering: 0.00017 (21%) | DB: 0.00019 (23%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00038 (2652 reqs/sec) | Rendering: 0.00015 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:07:56) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00275 (363 reqs/sec) | Rendering: 0.00011 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+  [4;36;1mCitizen Create (0.000478)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:08:31', '2008-10-17 23:08:31')[0m
+Rendering /citizens/edit.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:08:31) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00279 (359 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:08:31) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00019 (5405 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:31) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00047 (2114 reqs/sec) | Rendering: 0.00021 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:31) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.08755 (11 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:31) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00048 (2091 reqs/sec) | Rendering: 0.00019 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:31) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:31) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00037 (2732 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:31) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00046 (2177 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:31) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00046 (2187 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:31) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00043 (2299 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:31) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:31) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1017
+Completed in 0.00036 (2777 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2364 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00039 (2576 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00039 (2582 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00038 (2624 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00045 (2222 reqs/sec) | Rendering: 0.00020 (45%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00043 (2331 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000194)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00080 (1254 reqs/sec) | Rendering: 0.00018 (22%) | DB: 0.00019 (24%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00037 (2688 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00283 (352 reqs/sec) | Rendering: 0.00012 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:08:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00040 (2481 reqs/sec) | Rendering: 0.00011 (26%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+  [4;36;1mCitizen Create (0.000490)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:08:52', '2008-10-17 23:08:52')[0m
+Rendering /citizens/edit.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:08:52) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00267 (374 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:08:52) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00018 (5555 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:52) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00047 (2119 reqs/sec) | Rendering: 0.00021 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:52) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.08840 (11 reqs/sec) | Rendering: 0.00031 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00048 (2074 reqs/sec) | Rendering: 0.00019 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00040 (2531 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00037 (2732 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:08:53) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00045 (2216 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00048 (2091 reqs/sec) | Rendering: 0.00020 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00045 (2246 reqs/sec) | Rendering: 0.00018 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00039 (2532 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:08:53) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1017
+Completed in 0.00036 (2770 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00053 (1872 reqs/sec) | Rendering: 0.00025 (46%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00039 (2557 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00039 (2551 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00039 (2590 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00041 (2410 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00044 (2257 reqs/sec) | Rendering: 0.00017 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000193)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00085 (1174 reqs/sec) | Rendering: 0.00018 (21%) | DB: 0.00019 (22%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00039 (2571 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00289 (345 reqs/sec) | Rendering: 0.00012 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:08:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00039 (2543 reqs/sec) | Rendering: 0.00011 (27%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+  [4;36;1mCitizen Create (0.000478)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:09:55', '2008-10-17 23:09:55')[0m
+Rendering /citizens/edit.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:09:55) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00285 (351 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:09:55) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00018 (5433 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:09:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00047 (2122 reqs/sec) | Rendering: 0.00020 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:09:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.08758 (11 reqs/sec) | Rendering: 0.00031 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:09:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00048 (2070 reqs/sec) | Rendering: 0.00019 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:09:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:09:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00038 (2659 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:09:55) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00045 (2207 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:09:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00047 (2141 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:09:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00044 (2294 reqs/sec) | Rendering: 0.00018 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:09:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:09:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1017
+Completed in 0.00037 (2673 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2359 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00039 (2563 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00041 (2438 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00039 (2577 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00044 (2257 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00041 (2438 reqs/sec) | Rendering: 0.00016 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000200)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00080 (1254 reqs/sec) | Rendering: 0.00017 (21%) | DB: 0.00020 (25%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00038 (2646 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00282 (354 reqs/sec) | Rendering: 0.00012 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:09:55) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00039 (2590 reqs/sec) | Rendering: 0.00011 (27%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+  [4;36;1mCitizen Create (0.000502)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:13:37', '2008-10-17 23:13:37')[0m
+Rendering /citizens/edit.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:13:37) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00261 (383 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:13:37) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00018 (5461 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:13:37) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00049 (2053 reqs/sec) | Rendering: 0.00021 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:13:37) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00051 (1959 reqs/sec) | Rendering: 0.00020 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:13:37) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00048 (2104 reqs/sec) | Rendering: 0.00019 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:13:37) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00039 (2537 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:13:37) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00040 (2493 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:13:37) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00046 (2187 reqs/sec) | Rendering: 0.00019 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:13:37) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00050 (2000 reqs/sec) | Rendering: 0.00024 (48%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:13:37) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00043 (2303 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:13:37) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00039 (2538 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:13:37) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1017
+Completed in 0.00036 (2809 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00041 (2421 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00038 (2646 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00040 (2531 reqs/sec) | Rendering: 0.00017 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00045 (2231 reqs/sec) | Rendering: 0.00017 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00042 (2364 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00041 (2432 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000192)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00081 (1227 reqs/sec) | Rendering: 0.00021 (25%) | DB: 0.00019 (23%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00037 (2725 reqs/sec) | Rendering: 0.00015 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00275 (364 reqs/sec) | Rendering: 0.00011 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:13:37) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00039 (2545 reqs/sec) | Rendering: 0.00011 (27%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+  [4;36;1mCitizen Create (0.000484)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:14:58', '2008-10-17 23:14:58')[0m
+Rendering /citizens/edit.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:14:58) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00262 (381 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:14:58) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00018 (5526 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:14:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00050 (2003 reqs/sec) | Rendering: 0.00022 (44%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:14:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.08762 (11 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:14:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00053 (1879 reqs/sec) | Rendering: 0.00024 (44%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:14:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00039 (2543 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:14:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1012
+Completed in 0.00038 (2624 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:14:58) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00045 (2213 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:14:58) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00057 (1769 reqs/sec) | Rendering: 0.00022 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:14:58) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00045 (2212 reqs/sec) | Rendering: 0.00018 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:14:58) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:14:58) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1017
+Completed in 0.00036 (2770 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2364 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00039 (2557 reqs/sec) | Rendering: 0.00016 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00043 (2304 reqs/sec) | Rendering: 0.00021 (47%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00040 (2480 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00043 (2304 reqs/sec) | Rendering: 0.00018 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00042 (2403 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000191)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00080 (1243 reqs/sec) | Rendering: 0.00017 (21%) | DB: 0.00019 (23%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00038 (2624 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00284 (352 reqs/sec) | Rendering: 0.00012 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:14:58) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00039 (2571 reqs/sec) | Rendering: 0.00011 (27%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+  [4;36;1mCitizen Create (0.000482)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:15:14', '2008-10-17 23:15:14')[0m
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:15:14) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00267 (375 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:15:14) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00021 (4804 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:15:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00052 (1911 reqs/sec) | Rendering: 0.00023 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:15:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00043 (2341 reqs/sec) | Rendering: 0.00018 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:15:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00043 (2341 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:15:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1010
+Completed in 0.00042 (2353 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:15:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00036 (2746 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:15:14) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00045 (2232 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:15:14) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00051 (1965 reqs/sec) | Rendering: 0.00022 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:15:14) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00043 (2330 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:15:14) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1015
+Completed in 0.00040 (2519 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:15:14) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00036 (2809 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00039 (2557 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00037 (2709 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00045 (2202 reqs/sec) | Rendering: 0.00022 (47%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00041 (2464 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00042 (2387 reqs/sec) | Rendering: 0.00016 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00041 (2438 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000195)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00077 (1295 reqs/sec) | Rendering: 0.00016 (21%) | DB: 0.00020 (25%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00040 (2480 reqs/sec) | Rendering: 0.00019 (46%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00013 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:15:14) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00040 (2513 reqs/sec) | Rendering: 0.00011 (26%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/edit.html.erb
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:15:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:15:50) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00050 (1987 reqs/sec) | Rendering: 0.00019 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:16:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:16:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00047 (2128 reqs/sec) | Rendering: 0.00019 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:16:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00291 (344 reqs/sec) | Rendering: 0.00019 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:16:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00043 (2341 reqs/sec) | Rendering: 0.00016 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+  [4;36;1mCitizen Create (0.000661)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:17:07', '2008-10-17 23:17:07')[0m
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:17:07) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00263 (380 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:17:07) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00019 (5289 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:17:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00046 (2154 reqs/sec) | Rendering: 0.00020 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:17:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2403 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:17:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00041 (2414 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:17:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1010
+Completed in 0.00038 (2616 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:17:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00035 (2824 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:17:07) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00043 (2326 reqs/sec) | Rendering: 0.00018 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:17:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00045 (2201 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:17:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00042 (2381 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:17:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1015
+Completed in 0.00039 (2576 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:17:07) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00035 (2849 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2385 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00037 (2673 reqs/sec) | Rendering: 0.00015 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00042 (2385 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00037 (2718 reqs/sec) | Rendering: 0.00015 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00038 (2631 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00037 (2718 reqs/sec) | Rendering: 0.00015 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000184)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00074 (1356 reqs/sec) | Rendering: 0.00015 (20%) | DB: 0.00018 (24%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:17:07) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00036 (2777 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:17:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00281 (355 reqs/sec) | Rendering: 0.00017 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:17:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00040 (2531 reqs/sec) | Rendering: 0.00015 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/edit.html.erb
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:17:49) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00298 (335 reqs/sec) | Rendering: 0.00019 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:17:49) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00050 (1992 reqs/sec) | Rendering: 0.00023 (46%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+  [4;36;1mCitizen Create (0.000480)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:21:01', '2008-10-17 23:21:01')[0m
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:21:01) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00267 (374 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:21:01) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00022 (4604 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:21:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00048 (2083 reqs/sec) | Rendering: 0.00021 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:21:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2364 reqs/sec) | Rendering: 0.00018 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:21:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00042 (2392 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:21:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1010
+Completed in 0.00040 (2517 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:21:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00036 (2816 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:21:01) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00046 (2168 reqs/sec) | Rendering: 0.00021 (45%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:21:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00046 (2159 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:21:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00041 (2414 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:21:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1015
+Completed in 0.00038 (2603 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:21:01) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00036 (2777 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00041 (2462 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00037 (2702 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00044 (2252 reqs/sec) | Rendering: 0.00019 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00038 (2646 reqs/sec) | Rendering: 0.00016 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00040 (2480 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00038 (2603 reqs/sec) | Rendering: 0.00015 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000184)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00075 (1333 reqs/sec) | Rendering: 0.00016 (21%) | DB: 0.00018 (24%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00037 (2718 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00020 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:21:01) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00044 (2288 reqs/sec) | Rendering: 0.00016 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/edit.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+  [4;36;1mCitizen Create (0.000490)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:22:02', '2008-10-17 23:22:02')[0m
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+Rendering /citizens/show.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:22:02) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00268 (372 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:22:02) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00021 (4696 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:22:02) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00048 (2074 reqs/sec) | Rendering: 0.00021 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:22:02) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00042 (2359 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:22:02) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00042 (2364 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:22:02) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1010
+Completed in 0.00038 (2610 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:22:02) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00040 (2474 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:22:02) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00043 (2331 reqs/sec) | Rendering: 0.00018 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:22:02) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00047 (2132 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:22:02) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00042 (2369 reqs/sec) | Rendering: 0.00017 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:22:02) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1015
+Completed in 0.00038 (2637 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:22:02) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00035 (2839 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00040 (2519 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00037 (2732 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00042 (2369 reqs/sec) | Rendering: 0.00018 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00038 (2639 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00040 (2481 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00039 (2584 reqs/sec) | Rendering: 0.00015 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000194)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00077 (1298 reqs/sec) | Rendering: 0.00016 (21%) | DB: 0.00019 (25%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00037 (2725 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00295 (339 reqs/sec) | Rendering: 0.00025 (8%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:22:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00057 (1751 reqs/sec) | Rendering: 0.00019 (33%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/edit.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+  [4;36;1mCitizen Create (0.000506)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:26:44', '2008-10-17 23:26:44')[0m
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+Rendering /citizens/show.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:26:44) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00260 (384 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:26:44) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00018 (5497 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:26:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00046 (2169 reqs/sec) | Rendering: 0.00020 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:26:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00068 (1479 reqs/sec) | Rendering: 0.00020 (29%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:26:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00044 (2288 reqs/sec) | Rendering: 0.00017 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:26:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1010
+Completed in 0.00038 (2624 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:26:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00037 (2725 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:26:44) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00044 (2252 reqs/sec) | Rendering: 0.00019 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:26:44) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00044 (2288 reqs/sec) | Rendering: 0.00018 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:26:44) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00042 (2392 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:26:44) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1015
+Completed in 0.00039 (2590 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:26:44) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00035 (2824 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:26:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00040 (2486 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:26:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00038 (2666 reqs/sec) | Rendering: 0.00015 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:26:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00041 (2457 reqs/sec) | Rendering: 0.00017 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:26:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00037 (2695 reqs/sec) | Rendering: 0.00016 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:26:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00047 (2132 reqs/sec) | Rendering: 0.00017 (36%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:26:44) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00065 (1540 reqs/sec) | Rendering: 0.00029 (44%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:26:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000196)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00077 (1303 reqs/sec) | Rendering: 0.00016 (21%) | DB: 0.00020 (25%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:26:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00040 (2474 reqs/sec) | Rendering: 0.00016 (39%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:26:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00279 (358 reqs/sec) | Rendering: 0.00017 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:26:45) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00040 (2511 reqs/sec) | Rendering: 0.00015 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /urbo/index.html.erb
+Rendering /citizens/edit.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+  [4;36;1mCitizen Create (0.000454)[0m   [0;1mINSERT INTO "citizens" ("updated_at", "created_at") VALUES('2008-10-17 23:30:26', '2008-10-17 23:30:26')[0m
+Rendering /citizens/new.html.erb
+Rendering /citizens/index.html.erb
+Rendering /citizens/show.html.erb
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:30:26) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00274 (364 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#destroy (for 0.0.0.0 at 2008-10-17 21:30:26) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"37", "controller"=>"citizens"}
+Redirected to http://test.host/citizens
+Completed in 0.00019 (5315 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/37]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:30:26) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00046 (2187 reqs/sec) | Rendering: 0.00020 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:30:26) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00044 (2257 reqs/sec) | Rendering: 0.00019 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:30:26) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00047 (2145 reqs/sec) | Rendering: 0.00019 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:30:27) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1010
+Completed in 0.00038 (2598 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:30:27) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"citizens"}
+Redirected to http://test.host/citizens/1011
+Completed in 0.00035 (2832 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/1]
+
+
+Processing CitizensController#update (for 0.0.0.0 at 2008-10-17 21:30:27) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"37", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/edit
+Completed in 0.00043 (2321 reqs/sec) | Rendering: 0.00018 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:30:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Rendering citizens/new
+Completed in 0.00043 (2335 reqs/sec) | Rendering: 0.00018 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:30:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Rendering citizens/new
+Completed in 0.00049 (2036 reqs/sec) | Rendering: 0.00021 (43%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:30:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{}}
+Redirected to http://test.host/citizens/1015
+Completed in 0.00039 (2570 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?]
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-17 21:30:27) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"these"=>"params"}}
+Redirected to http://test.host/citizens/1016
+Completed in 0.00036 (2753 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens?citizen%5Bthese%5D=params]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00040 (2487 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#edit (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/edit
+Completed in 0.00036 (2755 reqs/sec) | Rendering: 0.00015 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37/edit]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00037 (2686 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00036 (2753 reqs/sec) | Rendering: 0.00015 (42%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/new]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00038 (2624 reqs/sec) | Rendering: 0.00016 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#show (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"37", "controller"=>"citizens"}
+Rendering citizens/show
+Completed in 0.00036 (2746 reqs/sec) | Rendering: 0.00015 (40%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens/37]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+  [4;35;1mCitizen Load (0.000199)[0m   [0mSELECT * FROM "citizens" [0m
+Rendering citizens/index
+Completed in 0.00082 (1222 reqs/sec) | Rendering: 0.00019 (22%) | DB: 0.00020 (24%) | 200 OK [http://test.host/citizens]
+
+
+Processing CitizensController#index (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"citizens"}
+Rendering citizens/index
+Completed in 0.00038 (2646 reqs/sec) | Rendering: 0.00016 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/citizens]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00276 (361 reqs/sec) | Rendering: 0.00016 (5%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-17 21:30:27) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00039 (2551 reqs/sec) | Rendering: 0.00015 (38%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /urbo/index.html.erb
+Rendering /citizens/edit.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-17 21:33:03) [GET]
+  Session ID: 0db26eed00d5b990c127a3a1d78d57b2
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00405 (247 reqs/sec) | Rendering: 0.00137 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
