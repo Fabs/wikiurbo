@@ -6625,3 +6625,80 @@ Rendering /urbo/index.html.erb
 Rendering /urbo/index.html.erb
 Rendering /urbo/index.html.erb
 Rendering /urbo/index.html.erb
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:15:00) [GET]
+  Session ID: b88fa0598b0c6ef34507f3b0d902058c
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.02001 (49 reqs/sec) | Rendering: 0.01679 (83%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:19:51) [GET]
+  Session ID: be8e808c3a23faafb1be02affc15666d
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00370 (270 reqs/sec) | Rendering: 0.00121 (32%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:20:06) [GET]
+  Session ID: 824f8df47a2797fb5f653e48779e17ff
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00381 (262 reqs/sec) | Rendering: 0.00134 (35%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:20:18) [GET]
+  Session ID: 9c070d5b58a1a9454d881f8bdbdb4d09
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00375 (266 reqs/sec) | Rendering: 0.00120 (32%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:20:34) [GET]
+  Session ID: 2a96e358565a41fc193425c78eaddbdf
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00122 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:20:48) [GET]
+  Session ID: 3e5da497943baff5e3c6b7d83f01c7e7
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00375 (266 reqs/sec) | Rendering: 0.00125 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:21:01) [GET]
+  Session ID: cc649b4a737ca54fa4b3ee19d1497950
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00372 (268 reqs/sec) | Rendering: 0.00123 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 13:21:19) [GET]
+  Session ID: 179dfaf82914dda28f514776a73863aa
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00369 (271 reqs/sec) | Rendering: 0.00120 (32%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 20:13:29) [GET]
+  Session ID: 03c43b85257ea8bd3ecbbfc18a6a1445
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00377 (265 reqs/sec) | Rendering: 0.00127 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 20:14:49) [GET]
+  Session ID: fb4024bf7d7502520465136a8a8bb347
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00369 (270 reqs/sec) | Rendering: 0.00120 (32%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-18 20:15:13) [GET]
+  Session ID: a59bcfc8c4ee6029ccb9f1f778bf0bd7
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00375 (266 reqs/sec) | Rendering: 0.00120 (32%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]

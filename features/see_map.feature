@@ -5,6 +5,5 @@ Feature: Viewing the map
   
   Scenario: Show a map at index page
 	When I acess the page /
-    Then the page should have tag div#map_div
-	And the page should include the headers for the map
+	Then the page should have tag div#map_div
 	
