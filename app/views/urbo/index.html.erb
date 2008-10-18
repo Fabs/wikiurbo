@@ -2,9 +2,9 @@
 	<head>
 		<%= GMap.header %>
 		<%= @map.to_html %>
+		<% @map.header_width_height(600, 400)%>
 	</head>
 	<body>
-		<!-- <div id="map_div"> -->
-		<%= @map.div %>
+		<%= @map.div(:width => 600, :height => 400) %>
 	</body>
 </html>

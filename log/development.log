@@ -575,3 +575,18 @@ Migrating to CreateCitizens (20081014164151)
 [0m
   [4;35;1mSQL (0.000177)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (0.002052)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081014164151')[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-17 22:05:05) [GET]
+  Session ID: 01492011e84f995f73f2d7ad90b205f3
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00362 (276 reqs/sec) | Rendering: 0.00125 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-17 22:07:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00348 (287 reqs/sec) | Rendering: 0.00121 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
