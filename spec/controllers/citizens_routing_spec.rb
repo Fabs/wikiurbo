@@ -6,9 +6,9 @@ describe CitizensController do
       route_for(:controller => "citizens", :action => "index").should == "/citizens"
     end
   
-    it "should map #new" do
-      route_for(:controller => "citizens", :action => "new").should == "/citizens/new"
-    end
+    # it "should map #new" do
+    #   route_for(:controller => "citizens", :action => "new").should == "/citizens/new"
+    # end
   
     it "should map #show" do
       route_for(:controller => "citizens", :action => "show", :id => 1).should == "/citizens/1"
@@ -32,9 +32,9 @@ describe CitizensController do
       params_from(:get, "/citizens").should == {:controller => "citizens", :action => "index"}
     end
   
-    it "should generate params for #new" do
-      params_from(:get, "/citizens/new").should == {:controller => "citizens", :action => "new"}
-    end
+    # it "should generate params for #new" do
+    #   params_from(:get, "/citizens/new").should == {:controller => "citizens", :action => "new"}
+    # end
   
     it "should generate params for #create" do
       params_from(:post, "/citizens").should == {:controller => "citizens", :action => "create"}

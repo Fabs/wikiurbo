@@ -1,11 +1,19 @@
-<h1>New citizen</h1>
+<h1>Sign up as a new user</h1>
+<% @citizen.password = @citizen.password_confirmation = nil %>
 
-<% form_for(@citizen) do |f| %>
-  <%= f.error_messages %>
+<%= error_messages_for :citizen %>
+<% form_for :citizen, :url => citizens_path do |f| -%>
+<p><%= label_tag 'login' %><br/>
+<%= f.text_field :login %></p>
 
-  <p>
-    <%= f.submit "Create" %>
-  </p>
-<% end %>
+<p><%= label_tag 'email' %><br/>
+<%= f.text_field :email %></p>
 
-<%= link_to 'Back', citizens_path %>
+<p><%= label_tag 'password' %><br/>
+<%= f.password_field :password %></p>
+
+<p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
+<%= f.password_field :password_confirmation %></p>
+
+<p><%= submit_tag 'Sign up' %></p>
+<% end -%>

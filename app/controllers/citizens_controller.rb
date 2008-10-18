@@ -1,44 +1,40 @@
 class CitizensController < ApplicationController
+  # Be sure to include AuthenticationSystem in Application Controller instead
+  include AuthenticatedSystem
+  
 
-  def index
-    @citizens = Citizen.find(:all)
-  end
-
-  def show
-    @citizen = Citizen.find(params[:id])
-  end
-
+  # render new.rhtml
   def new
     @citizen = Citizen.new
   end
-
-  def edit
-    @citizen = Citizen.find(params[:id])
-  end
-
+ 
   def create
+    logout_keeping_session!
     @citizen = Citizen.new(params[:citizen])
-    if @citizen.save
-      flash[:notice] = 'Citizen was successfully created.'
-      redirect_to(@citizen)
+    success = @citizen && @citizen.save
+    if success && @citizen.errors.empty?
+      redirect_back_or_default('/')
+      flash[:notice] = "Thanks for signing up!  We're sending you an email with your activation code."
     else
-      render :action => "new"
+      flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
+      render :action => 'new'
     end
   end
 
-  def update
-    @citizen = Citizen.find(params[:id])
-    if @citizen.update_attributes(params[:citizen])
-      flash[:notice] = 'Citizen was successfully updated.'
-      redirect_to(@citizen)
-    else
-      render :action => "edit"
+  def activate
+    logout_keeping_session!
+    citizen = Citizen.find_by_activation_code(params[:activation_code]) unless params[:activation_code].blank?
+    case
+    when (!params[:activation_code].blank?) && citizen && !citizen.active?
+      citizen.activate!
+      flash[:notice] = "Signup complete! Please sign in to continue."
+      redirect_to '/login'
+    when params[:activation_code].blank?
+      flash[:error] = "The activation code was missing.  Please follow the URL from your email."
+      redirect_back_or_default('/')
+    else 
+      flash[:error]  = "We couldn't find a citizen with that activation code -- check your email? Or maybe you've already activated -- try signing in."
+      redirect_back_or_default('/')
     end
-  end
-
-  def destroy
-    @citizen = Citizen.find(params[:id])
-    @citizen.destroy
-    redirect_to(citizens_url)
   end
 end
