@@ -1,9 +1,5 @@
 class CitizensController < ApplicationController
-  # Be sure to include AuthenticationSystem in Application Controller instead
-  include AuthenticatedSystem
   
-
-  # render new.rhtml
   def new
     @citizen = Citizen.new
   end
