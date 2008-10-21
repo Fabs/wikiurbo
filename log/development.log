@@ -1924,3 +1924,798 @@ Completed in 0.00427 (234 reqs/sec) | Rendering: 0.00197 (46%) | DB: 0.00000 (0%
 [0m
   [4;36;1mSQL (0.000151)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
   [4;35;1mSQL (0.002127)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000553)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000217)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003027)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002518)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002703)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002518)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000497)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002454)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000555)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000147)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000200)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003281)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002006)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002133)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002104)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000418)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002044)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000560)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000200)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003275)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.001953)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000291)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002080)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.001976)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000437)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.001909)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000554)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000145)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000204)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003014)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002245)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.003003)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002392)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000416)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002243)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000555)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000154)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000201)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003314)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.001867)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000286)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002201)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002263)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000446)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.001888)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000552)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000147)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000199)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002806)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002445)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000471)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002382)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002133)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000417)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002153)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000555)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000200)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002985)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002137)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000295)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002303)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002192)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000327)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002061)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000556)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000147)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000207)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003144)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002293)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000357)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002655)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002378)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000486)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002253)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000564)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000202)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003091)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002480)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000455)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002340)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002107)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000433)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002514)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000557)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000147)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000204)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003252)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.001928)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000282)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002207)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002214)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000451)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002032)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000567)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000145)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000203)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003223)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.001884)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000347)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002232)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002308)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000428)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002017)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000559)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000203)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003111)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002324)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000362)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002483)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002171)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000424)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002310)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000557)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000154)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000202)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003364)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002298)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000372)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002313)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002005)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000335)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.001948)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000561)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000152)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000557)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000215)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCitizens (20081018230708)
+Migrating to CreatePlaces (20081021184259)
+  [4;36;1mSQL (0.000111)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.096784)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.002484)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20081021184259')[0m
+  [4;35;1mSQL (0.000460)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000449)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000314)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mPRAGMA index_list("citizens")[0m
+  [4;35;1mSQL (0.000135)[0m   [0mPRAGMA index_info('index_citizens_on_login')[0m
+  [4;36;1mSQL (0.000049)[0m   [0;1mPRAGMA index_list("places")[0m
+  [4;36;1mSQL (0.000612)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000163)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000211)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003355)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002027)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000377)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002634)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000419)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002273)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002329)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000472)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002407)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002872)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 16:55:39) [GET]
+  Session ID: ecf2436c0835b4ef43583443308129d8
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00393 (254 reqs/sec) | Rendering: 0.00134 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-21 16:55:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://localhost:3000/login
+Completed in 0.00249 (402 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/places/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 16:55:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00471 (212 reqs/sec) | Rendering: 0.00247 (52%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 16:55:54) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--5c988665314a80e826af9e177f126e63a429d0df
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6b92c87489dd8be1b6ad83158f314a579edeb15b", "action"=>"create", "controller"=>"sessions", "password"=>"teste", "login"=>"schouery@gmail.com"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000593)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery@gmail.com' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery@gmail.com' from 127.0.0.1 at Tue Oct 21 18:55:54 UTC 2008
+Rendering sessions/new
+Completed in 0.00462 (216 reqs/sec) | Rendering: 0.00104 (22%) | DB: 0.00059 (12%) | 200 OK [http://localhost/session]
+
+
+Processing CitizensController#new (for 127.0.0.1 at 2008-10-21 16:56:00) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpG
+bGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yIjBDb3VsZG4ndCBsb2cgeW91IGlu
+IGFzICdzY2hvdWVyeUBnbWFpbC5jb20nBjoKQHVzZWR7BjsIRg==--dc03d3df6ea88552032c98cc36ca3942bc1ad5fd
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00962 (103 reqs/sec) | Rendering: 0.00531 (55%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing CitizensController#create (for 127.0.0.1 at 2008-10-21 16:56:20) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpG
+bGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yIjBDb3VsZG4ndCBsb2cgeW91IGlu
+IGFzICdzY2hvdWVyeUBnbWFpbC5jb20nBjoKQHVzZWR7BjsIVA==--d7810fdb746bda9b590432e7b818d4793ed0dbff
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"6b92c87489dd8be1b6ad83158f314a579edeb15b", "action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"1234", "login"=>"schouery@gmail.com", "password"=>"1234", "email"=>"schouery@gmail.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000167)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery@gmail.com') [0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'schouery@gmail.com') [0m
+Rendering citizens/new
+Completed in 0.00908 (110 reqs/sec) | Rendering: 0.00147 (16%) | DB: 0.00025 (2%) | 200 OK [http://localhost/citizens]
+
+
+Processing CitizensController#create (for 127.0.0.1 at 2008-10-21 16:56:33) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpG
+bGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yImRXZSBjb3VsZG4ndCBzZXQgdXAg
+dGhhdCBhY2NvdW50LCBzb3JyeS4gIFBsZWFzZSB0cnkgYWdhaW4sIG9yIGNv
+bnRhY3QgYW4gYWRtaW4gKGxpbmsgaXMgYWJvdmUpLgY6CkB1c2VkewY7CEY=--86b99c68c1d8e376029943d827914ca96fa77087
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"6b92c87489dd8be1b6ad83158f314a579edeb15b", "action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"123456", "login"=>"schouery@gmail.com", "password"=>"123456", "email"=>"schouery@gmail.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000142)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery@gmail.com') [0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'schouery@gmail.com') [0m
+  [4;35;1mCitizen Create (0.000443)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '2f40010ef1df84366f2233d9c6e41943f226d9ad', '2008-10-21 18:56:33', NULL, '427326f8685f7c550ff8abd7222cd580137484e2', NULL, 'd495f5b0bfbb2e3c3bdfe2141e684ce661bad3e2', NULL, 'schouery@gmail.com', 'schouery@gmail.com', '2008-10-21 18:56:33')[0m
+Sent mail to schouery@gmail.com
+
+Date: Tue, 21 Oct 2008 16:56:33 -0200
+From: ADMINEMAIL
+To: schouery@gmail.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery@gmail.com
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/d495f5b0bfbb2e3c3bdfe2141e684ce661bad3e2
+Redirected to http://localhost:3000/
+Completed in 0.02589 (38 reqs/sec) | DB: 0.00066 (2%) | 302 Found [http://localhost/citizens]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 16:56:33) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewc6C25vdGljZSJSVGhhbmtz
+IGZvciBzaWduaW5nIHVwISAgV2UncmUgc2VuZGluZyB5b3UgYW4gZW1haWwg
+d2l0aCB5b3VyIGFjdGl2YXRpb24gY29kZS46CmVycm9yImRXZSBjb3VsZG4n
+dCBzZXQgdXAgdGhhdCBhY2NvdW50LCBzb3JyeS4gIFBsZWFzZSB0cnkgYWdh
+aW4sIG9yIGNvbnRhY3QgYW4gYWRtaW4gKGxpbmsgaXMgYWJvdmUpLgY6CkB1
+c2Vkewc7CUY7ClQ=--df14744a25a6a39a378f151f22a4e66f8f783ba6
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00276 (362 reqs/sec) | Rendering: 0.00052 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-21 16:56:41) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSJSVGhhbmtz
+IGZvciBzaWduaW5nIHVwISAgV2UncmUgc2VuZGluZyB5b3UgYW4gZW1haWwg
+d2l0aCB5b3VyIGFjdGl2YXRpb24gY29kZS4GOgpAdXNlZHsGOwlU--976fb8b38bc7770483b9c5e8a306759d86742200
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://localhost:3000/login
+Completed in 0.00240 (416 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/places/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 16:56:41) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c65fed61ed9bf2e556ed17a8568e1ef1a06a505d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00419 (238 reqs/sec) | Rendering: 0.00119 (28%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 16:56:44) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c65fed61ed9bf2e556ed17a8568e1ef1a06a505d
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6b92c87489dd8be1b6ad83158f314a579edeb15b", "action"=>"create", "controller"=>"sessions", "password"=>"123456", "login"=>"schouery@gmail.com"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000557)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery@gmail.com' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery@gmail.com' from 127.0.0.1 at Tue Oct 21 18:56:44 UTC 2008
+Rendering sessions/new
+Completed in 0.00445 (224 reqs/sec) | Rendering: 0.00099 (22%) | DB: 0.00056 (12%) | 200 OK [http://localhost/session]
+  [4;36;1mCitizen Load (0.000668)[0m   [0;1mSELECT * FROM "citizens" LIMIT 1[0m
+  [4;35;1mCitizen Update (0.000560)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 18:57:16', "activation_code" = NULL, "updated_at" = '2008-10-21 18:57:16' WHERE "id" = 1[0m
+Sent mail to schouery@gmail.com
+
+Date: Tue, 21 Oct 2008 16:57:16 -0200
+From: ADMINEMAIL
+To: schouery@gmail.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery@gmail.com, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 16:57:26) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWQwIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6CmVycm9yIjBDb3VsZG4n
+dCBsb2cgeW91IGluIGFzICdzY2hvdWVyeUBnbWFpbC5jb20nBjoKQHVzZWR7
+BjsJRg==--f489ac7a72c74e7463983ac4efb32805e2c7bf49
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6b92c87489dd8be1b6ad83158f314a579edeb15b", "action"=>"create", "controller"=>"sessions", "password"=>"123456", "login"=>"schouery@gmail.com"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mCitizen Load (0.000661)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'schouery@gmail.com' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://localhost:3000/
+Completed in 0.00763 (130 reqs/sec) | DB: 0.00066 (8%) | 302 Found [http://localhost/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 16:57:26) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWRpBiIKZmxhc2hJQzonQWN0aW9u
+Q29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsHOgtub3RpY2UiG0xvZ2dl
+ZCBpbiBzdWNjZXNzZnVsbHk6CmVycm9yIjBDb3VsZG4ndCBsb2cgeW91IGlu
+IGFzICdzY2hvdWVyeUBnbWFpbC5jb20nBjoKQHVzZWR7BzsJRjsKVA==--c4b9d7589f2d66cef2544f3a2d3475576b2240fb
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00286 (350 reqs/sec) | Rendering: 0.00054 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-21 16:57:29) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzUwMWI2YzAyODRkMzYwMzY1Yzg1MTI4YjQ2OTA0
+YmM6DnJldHVybl90bzA6D2NpdGl6ZW5faWRpBiIKZmxhc2hJQzonQWN0aW9u
+Q29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dl
+ZCBpbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--e934e48fad38bad0ea46de38707815181337bb72
+  Parameters: {"action"=>"new", "controller"=>"places"}
+  [4;36;1mCitizen Load (0.000301)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+Rendering places/new
+Completed in 0.01142 (87 reqs/sec) | Rendering: 0.00216 (18%) | DB: 0.00030 (2%) | 200 OK [http://localhost/places/new]
+  [4;36;1mSQL (0.000601)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000172)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000215)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003163)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002285)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000367)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002676)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000419)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002628)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002440)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000446)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002231)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002256)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000603)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000172)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000211)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003313)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002082)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000370)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002706)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000415)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002360)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002355)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000472)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002431)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002253)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000211)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003449)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002016)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002728)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000445)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002008)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002388)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000523)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002683)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002347)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000601)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000211)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003328)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002147)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000382)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002804)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000428)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002508)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002529)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000447)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002513)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002310)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000604)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000194)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003085)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002265)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000389)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002377)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000302)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002311)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002386)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000616)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002516)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002143)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000607)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000169)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000194)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003056)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.002322)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000393)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002429)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000402)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002238)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002685)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000474)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002315)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002523)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000637)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000357)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000198)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002653)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.001970)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000365)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002816)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000466)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002623)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002795)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000534)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000262)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002847)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.002468)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m
+  [4;36;1mSQL (0.000604)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000169)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000238)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002126)[0m   [0;1mCREATE TABLE "citizens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.001665)[0m   [0mCREATE UNIQUE INDEX "index_citizens_on_login" ON "citizens" ("login")[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002210)[0m   [0mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.000274)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002276)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.002646)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.000513)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.002514)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20081021184259')[0m
+  [4;36;1mSQL (0.001522)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20081018230708')[0m

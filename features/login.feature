@@ -4,7 +4,7 @@ Feature: Login into the Wikiurbo
 	So that I can acess my page and relative info
 	
 	Scenario: User see the links to login/signup at index
-		Given that citizen is not logged in
+		Given that I am not logged in
 		When I acess the page /
 		Then the page should have the "Login" link to "/login"
 		And the page should have the "Signup" link to "/signup"
