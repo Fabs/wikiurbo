@@ -27,3 +27,11 @@ Feature: Login into the Wikiurbo
 		And I press "Log In"
 		Then I should be logged in
 		
+	Scenario: User fill the login form incorrectly and try to login
+		GivenScenario User goes to the login page
+		Given that user "schouery" has password "123456"
+		When I fill in "login" with "schouery"
+		And I fill in "password" with "654321"
+		And I press "Log In"
+		Then I should not be logged in
+	

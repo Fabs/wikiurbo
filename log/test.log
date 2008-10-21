@@ -29146,3 +29146,2156 @@ Processing UrboController#index (for 127.0.0.1 at 2008-10-19 17:38:10) [GET]
   Parameters: {"action"=>"index", "controller"=>"urbo"}
 Rendering urbo/index
 Completed in 0.00090 (1108 reqs/sec) | Rendering: 0.00071 (78%) | DB: 0.00033 (36%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: 4469407af1702dfd2b34641dc1e87ef0
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.01081 (92 reqs/sec) | Rendering: 0.00693 (64%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: 21641a222719a28be6d80193508e04cb
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00085 (1169 reqs/sec) | Rendering: 0.00067 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.01181 (84 reqs/sec) | Rendering: 0.00882 (74%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: cd5e74e4e6d68b80942be90ac436a9ab
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00088 (1136 reqs/sec) | Rendering: 0.00068 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00110 (909 reqs/sec) | Rendering: 0.00101 (91%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000116)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000077)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000455)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '120acf7b6c2a683e508594863c655a7cefd86e4b', '2008-10-21 16:05:55', NULL, 'c791b741eb8f1e2fb1ae1213d86f11fa2befc121', NULL, 'd8bf0912f1984c0c4bd71e7fce668a53710f8815', NULL, 'schouery', 'valid@email.com', '2008-10-21 16:05:55')[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 14:05:55 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/d8bf0912f1984c0c4bd71e7fce668a53710f8815
+  [4;35;1mCitizen Update (0.000195)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 16:05:55', "activation_code" = NULL, "updated_at" = '2008-10-21 16:05:55' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 14:05:55 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"123456", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 14:05:55) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"123456"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000380)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://www.example.com/
+Completed in 0.00190 (526 reqs/sec) | DB: 0.00122 (64%) | 302 Found [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoPY2l0aXplbl9pZGkGIgpmbGFzaElDOidBY3Rp
+b25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9n
+Z2VkIGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY=--631ae0eea3fa8b9cdb31fbe874d482a4b802598e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00071 (1400 reqs/sec) | Rendering: 0.00056 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;35;1mCitizen Load (0.000337)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:05:55) [GET]
+  Session ID: 1528097e3725d057bf44bab727941af7
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00091 (1098 reqs/sec) | Rendering: 0.00069 (75%) | DB: 0.00034 (37%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: 546014c786354db1b1e287abf4803ef0
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00124 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: d3610949cae1814059e9641382dd8c50
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00065 (1543 reqs/sec) | Rendering: 0.00050 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00421 (237 reqs/sec) | Rendering: 0.00184 (43%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: 7bb08e53e4849677cdbbfc7e4a2afa59
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00071 (1410 reqs/sec) | Rendering: 0.00055 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00194 (514 reqs/sec) | Rendering: 0.00184 (94%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000123)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000078)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000458)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '3e5fa6c74ee3a4df274aeaa2770d79570256a41f', '2008-10-21 16:39:57', NULL, 'ea9e1ba7a0c93d28e53393f52b138d2f5329b1a7', NULL, '655881e4c0b51e3d28b4e5d298835c0e8a49208b', NULL, 'schouery', 'valid@email.com', '2008-10-21 16:39:57')[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 14:39:57 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/655881e4c0b51e3d28b4e5d298835c0e8a49208b
+  [4;35;1mCitizen Update (0.000194)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 16:39:57', "activation_code" = NULL, "updated_at" = '2008-10-21 16:39:57' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 14:39:57 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"123456", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 14:39:57) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"123456"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000394)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://www.example.com/
+Completed in 0.00198 (504 reqs/sec) | DB: 0.00125 (62%) | 302 Found [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoPY2l0aXplbl9pZGkGIgpmbGFzaElDOidBY3Rp
+b25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9n
+Z2VkIGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY=--631ae0eea3fa8b9cdb31fbe874d482a4b802598e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00073 (1377 reqs/sec) | Rendering: 0.00057 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;35;1mCitizen Load (0.000331)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: 7e45bc6745cca41c56c995cb318040ac
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00091 (1103 reqs/sec) | Rendering: 0.00071 (78%) | DB: 0.00033 (36%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00111 (904 reqs/sec) | Rendering: 0.00101 (91%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000239)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000073)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000339)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '9bc6568d9aa29923239545a87f0c7cc761c83b07', '2008-10-21 16:39:57', NULL, '8dd917c3538e704d78ee955fe73f155979ec3921', NULL, '22d7d2da57e759339563efff9cc8aedb5f145410', NULL, 'schouery', 'valid@email.com', '2008-10-21 16:39:57')[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 14:39:57 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/22d7d2da57e759339563efff9cc8aedb5f145410
+  [4;35;1mCitizen Update (0.000117)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 16:39:57', "activation_code" = NULL, "updated_at" = '2008-10-21 16:39:57' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 14:39:57 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"654321", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 14:39:57) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"654321"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000371)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery' from 127.0.0.1 at Tue Oct 21 16:39:57 UTC 2008
+Rendering sessions/new
+Completed in 0.00230 (434 reqs/sec) | Rendering: 0.00102 (44%) | DB: 0.00114 (49%) | 200 OK [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 14:39:57) [GET]
+  Session ID: 10d5f8ec6e297bc39a2943a90859e348
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00075 (1335 reqs/sec) | Rendering: 0.00058 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.000282)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000142)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000116)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000136)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000103)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000137)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000087)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mCitizen Create (0.000372)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('1234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890', 'a335731f08139e92f81873b186f974595b0edcb1', '2008-10-21 17:18:53', NULL, '9b905d7ef1c14245f5bc1d1acc117015be71c73d', NULL, '25026b393fb4c6064190221e90813ecf6f665cef', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/25026b393fb4c6064190221e90813ecf6f665cef
+  [4;36;1mSQL (0.000186)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000335)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000097)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mCitizen Create (0.000423)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '84464aa91ea2e1feea7aa3d6e2f6b4d39c89bd94', '2008-10-21 17:18:53', NULL, 'fa04c09a28bd5a80a86c020b5361cc40c0efb6dc', NULL, '2c3cd12c946325cc96231affacac886f199f1516', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/2c3cd12c946325cc96231affacac886f199f1516
+  [4;35;1mSQL (0.000178)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000131)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000114)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mCitizen Create (0.000408)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('Andre The Giant (7''4", 520 lb.) -- has a posse', 'a247fd52c0fa74527153d620201fc0145a471db0', '2008-10-21 17:18:53', NULL, 'b335f271f0b3a07744019190e04de6242f3fde19', NULL, 'b5b8727869910d013ff00089f253d0fe61f8d945', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/b5b8727869910d013ff00089f253d0fe61f8d945
+  [4;36;1mSQL (0.000177)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000091)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000072)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'bracket>@gmail.com') [0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000142)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000070)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'bracket<@gmail.com') [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000091)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'space @gmail.com') [0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000145)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000076)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'backtick`@gmail.com') [0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000145)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000071)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'tick''@gmail.com') [0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000156)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000088)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quote"@gmail.com') [0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000150)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000071)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'semicolon;@gmail.com') [0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000136)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000075)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000070)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'uucp!addr@gmail.com') [0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000134)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000070)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = '1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail2.com') [0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000142)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000068)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'r@.wk') [0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000132)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000069)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'newline
+') [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000132)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000068)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'tab	') [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000133)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000070)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'need.domain.and.tld@de') [0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000135)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000068)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'iñtërnâtiônàlizætiøn@hasnt.happened.to.email') [0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000135)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000069)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@toolongtld.abcdefg') [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000134)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000103)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@badtld.xxx') [0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000350)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000090)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000070)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@no-rep-dots..com') [0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000138)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000071)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = '!!@nobadchars.com') [0m
+  [4;36;1mSQL (0.000103)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000173)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000071)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'student.name@university.edu') [0m
+  [4;36;1mCitizen Create (0.000362)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', 'ff772245e63291b8a177ef146a5d4117d030afcb', '2008-10-21 17:18:53', NULL, 'c92db457e43b95d9e9d8a9dcb83593079576f158', NULL, '9ed72fb05c9623f93fcfd0ab2ff5525c9d21f30a', NULL, 'quire', 'student.name@university.edu', '2008-10-21 17:18:53')[0m
+Sent mail to student.name@university.edu
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: student.name@university.edu
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/9ed72fb05c9623f93fcfd0ab2ff5525c9d21f30a
+  [4;35;1mSQL (0.000141)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000320)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000126)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'domain@can.haz.many.sub.doma.in') [0m
+  [4;35;1mCitizen Create (0.000401)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '233332e055ff29c76e528662d11c38d993779ce7', '2008-10-21 17:18:53', NULL, '7794c586493610528b5f53fbe52f7e908cbf0f81', NULL, 'e0204f8fa5f979fe0b0d3256750ab7e0f2f20507', NULL, 'quire', 'domain@can.haz.many.sub.doma.in', '2008-10-21 17:18:53')[0m
+Sent mail to domain@can.haz.many.sub.doma.in
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: domain@can.haz.many.sub.doma.in
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/e0204f8fa5f979fe0b0d3256750ab7e0f2f20507
+  [4;36;1mSQL (0.000182)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000103)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'hello+routing-str@gmail.com') [0m
+  [4;36;1mCitizen Create (0.000524)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', 'fd3b329b34d06a69e240b9250b1ea4faf563d56f', '2008-10-21 17:18:53', NULL, 'db46e8f0f2797450abd21ac06bb75f557f8bbb05', NULL, '10b27576e337c2fa53750fc919f8c9db97f49d06', NULL, 'quire', 'hello+routing-str@gmail.com', '2008-10-21 17:18:53')[0m
+Sent mail to hello+routing-str@gmail.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: hello+routing-str@gmail.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/10b27576e337c2fa53750fc919f8c9db97f49d06
+  [4;35;1mSQL (0.000201)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000248)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000147)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'uucp%addr@gmail.com') [0m
+  [4;35;1mCitizen Create (0.000461)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '9c7070d91f68150884be92b4801e385d606f9a98', '2008-10-21 17:18:53', NULL, '27afc74be27f4ed79c385b1088d3fdc747a92f20', NULL, '0e08821d0ab54be3bcad372345b53e8ac6814e31', NULL, 'quire', 'uucp%addr@gmail.com', '2008-10-21 17:18:53')[0m
+Sent mail to uucp%addr@gmail.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: uucp%addr@gmail.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/0e08821d0ab54be3bcad372345b53e8ac6814e31
+  [4;36;1mSQL (0.000192)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000210)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000094)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'hello.-_there@funnychar.com') [0m
+  [4;36;1mCitizen Create (0.000310)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '7722c1023f4ba51b49f21d0e6aa333d428f0c4af', '2008-10-21 17:18:53', NULL, 'aec5db65e3ba315e9e4b3246ae7e34666aead7ff', NULL, 'e54f2dde8559b19cff0dfa6f75cc0c18f929fe00', NULL, 'quire', 'hello.-_there@funnychar.com', '2008-10-21 17:18:53')[0m
+Sent mail to hello.-_there@funnychar.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: hello.-_there@funnychar.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/e54f2dde8559b19cff0dfa6f75cc0c18f929fe00
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000237)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000106)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = '1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail.com') [0m
+  [4;35;1mCitizen Create (0.000402)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '5f2db2263030ccbb5054bc8834621e52dc158a40', '2008-10-21 17:18:53', NULL, '45b4747200e98bba15772621bd78d0b70cca55f8', NULL, 'e07ca7f2c77c59dbd9ae9ed9ce1dc824bc177880', NULL, 'quire', '1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail.com', '2008-10-21 17:18:53')[0m
+Sent mail to 1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: 1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/e07ca7f2c77c59dbd9ae9ed9ce1dc824bc177880
+  [4;36;1mSQL (0.000182)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000227)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000104)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000092)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'r@a.wk') [0m
+  [4;36;1mCitizen Create (0.000435)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '3795178d8f62e26f23bfa39ce17db4a1a297926a', '2008-10-21 17:18:53', NULL, '138a7075ab6066e2e2020950600c8d41b419e964', NULL, '9a34263036584d62233b72d6929cd6ebc9d0a686', NULL, 'quire', 'r@a.wk', '2008-10-21 17:18:53')[0m
+Sent mail to r@a.wk
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: r@a.wk
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/9a34263036584d62233b72d6929cd6ebc9d0a686
+  [4;35;1mSQL (0.000199)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000316)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000114)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@nonexistant-tld.qq') [0m
+  [4;35;1mCitizen Create (0.000502)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', 'fef79c76bc061229e24389cd8c652c5eefb3f0a9', '2008-10-21 17:18:53', NULL, '5964bdc88dd505c2a139f31a27e7b8a1af73eb6f', NULL, 'c9b87c5b25a85ffe8a2bcdfe4de0e99709bf2444', NULL, 'quire', 'foo@nonexistant-tld.qq', '2008-10-21 17:18:53')[0m
+Sent mail to foo@nonexistant-tld.qq
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: foo@nonexistant-tld.qq
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/c9b87c5b25a85ffe8a2bcdfe4de0e99709bf2444
+  [4;36;1mSQL (0.000185)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000405)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000084)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@twoletter-tld.de') [0m
+  [4;36;1mCitizen Create (0.000369)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', 'c4dccc3017306ddd6e2a20a93dd8a21551b6c00b', '2008-10-21 17:18:53', NULL, '3ead6cc9ff04c8d49af18d4acf122fdcf1a87a77', NULL, 'e3e2d15592c7544d0a1f344adda8b4df2da328d4', NULL, 'quire', 'foo@twoletter-tld.de', '2008-10-21 17:18:53')[0m
+Sent mail to foo@twoletter-tld.de
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: foo@twoletter-tld.de
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/e3e2d15592c7544d0a1f344adda8b4df2da328d4
+  [4;35;1mSQL (0.000152)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000106)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@newskool-tld.museum') [0m
+  [4;35;1mCitizen Create (0.000442)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '0724ab7c8c2fc08656e5f9821d2e6bf456a019a5', '2008-10-21 17:18:53', NULL, '7ba81811248e4baea63c0241f2baa18e536efdeb', NULL, '41263ac46af1fc812ae700d968573493ed730bb3', NULL, 'quire', 'foo@newskool-tld.museum', '2008-10-21 17:18:53')[0m
+Sent mail to foo@newskool-tld.museum
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: foo@newskool-tld.museum
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/41263ac46af1fc812ae700d968573493ed730bb3
+  [4;36;1mSQL (0.000174)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000319)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000103)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'foo@bar.com') [0m
+  [4;36;1mCitizen Create (0.000455)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '6f1b0c99879954825383564fe68e25ed32b290bb', '2008-10-21 17:18:53', NULL, '4f25e1d0aa0494ad751cf932877d575ab6b2aab8', NULL, '8a49997b9d03153189267f1604b0745c3fb3a6cb', NULL, 'quire', 'foo@bar.com', '2008-10-21 17:18:53')[0m
+Sent mail to foo@bar.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: foo@bar.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/8a49997b9d03153189267f1604b0745c3fb3a6cb
+  [4;35;1mSQL (0.000200)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'space ') [0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000138)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000095)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'plus+') [0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000122)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000090)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'percent%') [0m
+  [4;36;1mSQL (0.000082)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000109)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000131)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'backtick`') [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000108)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000074)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'tick''') [0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000109)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000074)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quote"') [0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000100)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000076)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'semicolon;') [0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000099)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000076)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'iñtërnâtiônàlizætiøn hasn''t happened to ruby 1.8 yet') [0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000099)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000075)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'newline
+') [0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000099)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000075)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'tab	') [0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000113)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000087)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = '1234567890_234567890_234567890_234567890_') [0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000109)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000081)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = '12') [0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mSQL (0.000148)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000099)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'hello.-_there@funnychar.com') [0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mCitizen Create (0.000363)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', 'f9b2b288c9da80c696da7f5be751c779e1e0edab', '2008-10-21 17:18:53', NULL, 'c7c17755919cacabb01292425c6159dd3a588002', NULL, '1a580c58405ea3e21b12e4c1d65800dfd28f49d5', NULL, 'hello.-_there@funnychar.com', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: hello.-_there@funnychar.com
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/1a580c58405ea3e21b12e4c1d65800dfd28f49d5
+  [4;36;1mSQL (0.000171)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = '1234567890_234567890_234567890_234567890') [0m
+  [4;35;1mSQL (0.000093)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mCitizen Create (0.000402)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '40facdb2c7d68afa546afd1206f420fd14c7cd42', '2008-10-21 17:18:53', NULL, '4e5047e20d5e02f565c005ba1a9dc117443ff7d6', NULL, '6688172fcbef2fd6ab436e34d4577e1ddb7fd2c9', NULL, '1234567890_234567890_234567890_234567890', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: 1234567890_234567890_234567890_234567890
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/6688172fcbef2fd6ab436e34d4577e1ddb7fd2c9
+  [4;35;1mSQL (0.000182)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000259)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000107)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = '123') [0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mCitizen Create (0.000385)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '21c930340943a0d68b368e3b86ca1abc441b9f3f', '2008-10-21 17:18:53', NULL, '9a0db262cf947ee818d8d6c1b0bacb1dae499035', NULL, '026ad3ffd29c832832b32a2a3ed7647bfb12b2dd', NULL, '123', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: 123
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/026ad3ffd29c832832b32a2a3ed7647bfb12b2dd
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mCitizen Create (0.000424)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '8b2a945a240014a9eedfef1cd2e8843ecfcf57f6', '2008-10-21 17:18:53', NULL, '547b66220103617fc40618ab20b6ef145473ee36', NULL, '7a9d8d1519aaaa8052f8760c0b7cbe7b4245fa0d', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/7a9d8d1519aaaa8052f8760c0b7cbe7b4245fa0d
+  [4;36;1mCitizen Load (0.000305)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 4) [0m
+  [4;35;1mSQL (0.000198)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000086)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000070)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mCitizen Create (0.000321)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '6e76f365d813faeae6a03338c55630cefb4de6d7', '2008-10-21 17:18:53', NULL, 'f7926822067ff9d438fa279cd8195bdaf79ad4e2', NULL, '272bfc87fa4ee2ad613e13111da1224498b986fb', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:53')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/272bfc87fa4ee2ad613e13111da1224498b986fb
+  [4;35;1mSQL (0.000149)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mCitizen Load (0.000461)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Update (0.000322)[0m   [0mUPDATE "citizens" SET "remember_token" = 'dc58d648003b590067ab066fda4752a41681ad09', "remember_token_expires_at" = '2008-11-04 17:18:53', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000519)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Update (0.000349)[0m   [0mUPDATE "citizens" SET "remember_token" = '21bdccf59fe540a3f91da7ffc162ca9487aa6366', "remember_token_expires_at" = '2008-10-28 17:18:53', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000472)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Update (0.000336)[0m   [0mUPDATE "citizens" SET "remember_token" = '8ccfd80b295cad8dd7e7c333a0df8596ad2cba19', "remember_token_expires_at" = '2008-10-28 17:18:53', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000468)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Update (0.000337)[0m   [0mUPDATE "citizens" SET "remember_token" = '18ff03a606ae7b6b6451316cf79effb19560980b', "remember_token_expires_at" = '2008-11-04 17:18:53', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;36;1mCitizen Update (0.000122)[0m   [0;1mUPDATE "citizens" SET "remember_token" = NULL, "remember_token_expires_at" = NULL, "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000697)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Update (0.000326)[0m   [0;1mUPDATE "citizens" SET "remember_token" = '40e71cdf3ebed828e027fef6cfa2ad0703adcb6d', "remember_token_expires_at" = '2008-11-04 17:18:53', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000518)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000380)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000351)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000350)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000351)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000428)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000355)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000350)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000351)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000363)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000315)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000314)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000314)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000289)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000288)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000290)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000287)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000290)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000309)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000323)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000272)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000371)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000269)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000261)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000269)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000326)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000271)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000267)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000264)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000264)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000318)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000265)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000280)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000262)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000261)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000264)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000262)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000274)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000281)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000265)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000321)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000269)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000264)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000264)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000264)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000264)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000262)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000265)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000319)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000288)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000275)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000264)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000262)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000262)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000262)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000289)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000261)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000262)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000272)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000285)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000261)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000261)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000262)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000274)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000262)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000263)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000344)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'old_password_holder' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000301)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000302)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000261)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000302)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin2' AND "citizens".id <> 1) [0m
+  [4;35;1mSQL (0.000084)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;36;1mCitizen Update (0.000533)[0m   [0;1mUPDATE "citizens" SET "login" = 'quentin2', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000286)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin2' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mCitizen Load (0.000604)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mSQL (0.000113)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;35;1mCitizen Update (0.000308)[0m   [0mUPDATE "citizens" SET "crypted_password" = 'f6ed9bfd0173365c93f3f761801d201f67147469', "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000370)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000508)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000090)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email IS NULL) [0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000195)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000092)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000092)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000173)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;36;1mSQL (0.000088)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login IS NULL) [0m
+  [4;35;1mSQL (0.000083)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000111)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+Rendering /citizens/index.html.erb
+Rendering /citizens/new.html.erb
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00306 (327 reqs/sec) | Rendering: 0.00019 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/signup]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00042 (2357 reqs/sec) | Rendering: 0.00015 (36%) | DB: 0.00000 (0%) | 200 OK [http://test.host/signup]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00041 (2457 reqs/sec) | Rendering: 0.00015 (36%) | DB: 0.00000 (0%) | 200 OK [http://test.host/signup]
+
+
+Processing CitizensController#new (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"citizens"}
+Rendering citizens/new
+Completed in 0.00040 (2493 reqs/sec) | Rendering: 0.00015 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/signup]
+
+
+Processing CitizensController#activate (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "activation_code"=>"i_haxxor_joo", "controller"=>"citizens"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mCitizen Load (0.000212)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."activation_code" = 'i_haxxor_joo') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00114 (874 reqs/sec) | DB: 0.00021 (18%) | 302 Found [http://test.host/citizens/activate?activation_code=i_haxxor_joo]
+
+
+Processing CitizensController#activate (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "activation_code"=>"", "controller"=>"citizens"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00030 (3377 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/activate?activation_code=]
+
+
+Processing CitizensController#activate (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "controller"=>"citizens"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00026 (3816 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/citizens/activate]
+  [4;36;1mCitizen Load (0.000183)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'aaron' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000272)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 2) [0m
+
+
+Processing CitizensController#activate (for 0.0.0.0 at 2008-10-21 15:18:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "activation_code"=>"fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f", "controller"=>"citizens"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000276)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."activation_code" = 'fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f') LIMIT 1[0m
+  [4;35;1mCitizen Update (0.000305)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 17:18:53', "activation_code" = NULL, "updated_at" = '2008-10-21 17:18:53' WHERE "id" = 2[0m
+Sent mail to aaron@example.com
+
+Date: Tue, 21 Oct 2008 15:18:53 -0200
+From: ADMINEMAIL
+To: aaron@example.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+aaron, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+Redirected to http://test.host/login
+Completed in 0.00460 (217 reqs/sec) | DB: 0.00104 (22%) | 302 Found [http://test.host/citizens/activate?activation_code=fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f]
+  [4;36;1mCitizen Load (0.000317)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'aaron' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000290)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>"quire", "email"=>nil}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000128)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000094)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email IS NULL) [0m
+Rendering citizens/new
+Completed in 0.00264 (379 reqs/sec) | Rendering: 0.00026 (9%) | DB: 0.00083 (31%) | 200 OK [http://test.host/register?citizen%5Bemail%5D=&citizen%5Blogin%5D=quire&citizen%5Bpassword%5D=quire69&citizen%5Bpassword_confirmation%5D=quire69]
+  [4;36;1mSQL (0.000162)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000199)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>nil, "password"=>"quire69", "login"=>"quire", "email"=>"quire@example.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000097)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+Rendering citizens/new
+Completed in 0.00266 (375 reqs/sec) | Rendering: 0.00024 (8%) | DB: 0.00073 (27%) | 200 OK [http://test.host/register?citizen%5Bemail%5D=quire%40example.com&citizen%5Blogin%5D=quire&citizen%5Bpassword%5D=quire69&citizen%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.000149)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000203)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"quire69", "password"=>nil, "login"=>"quire", "email"=>"quire@example.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000112)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000090)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+Rendering citizens/new
+Completed in 0.00238 (420 reqs/sec) | Rendering: 0.00023 (9%) | DB: 0.00055 (23%) | 200 OK [http://test.host/register?citizen%5Bemail%5D=quire%40example.com&citizen%5Blogin%5D=quire&citizen%5Bpassword%5D=&citizen%5Bpassword_confirmation%5D=quire69]
+  [4;36;1mSQL (0.000131)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+  [4;35;1mSQL (0.000178)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>nil, "email"=>"quire@example.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000114)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login IS NULL) [0m
+  [4;35;1mSQL (0.000077)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+Rendering citizens/new
+Completed in 0.00207 (483 reqs/sec) | Rendering: 0.00020 (9%) | DB: 0.00050 (24%) | 200 OK [http://test.host/register?citizen%5Bemail%5D=quire%40example.com&citizen%5Blogin%5D=&citizen%5Bpassword%5D=quire69&citizen%5Bpassword_confirmation%5D=quire69]
+  [4;36;1mSQL (0.000123)[0m   [0;1mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>"quire", "email"=>"quire@example.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mSQL (0.000157)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;35;1mCitizen Create (0.000358)[0m   [0mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '06910c0e2c99bd5a650225365bb4bc12372461cf', '2008-10-21 17:18:54', NULL, '467e8b2576ddfec7e5f3af492f3e2b24d751f4de', NULL, '5ac0d41876d818875e260213e45a0e8b6ef00d27', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:54')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:54 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/5ac0d41876d818875e260213e45a0e8b6ef00d27
+Redirected to http://test.host/
+Completed in 0.00561 (178 reqs/sec) | DB: 0.00071 (12%) | 302 Found [http://test.host/register?citizen%5Bemail%5D=quire%40example.com&citizen%5Blogin%5D=quire&citizen%5Bpassword%5D=quire69&citizen%5Bpassword_confirmation%5D=quire69]
+  [4;36;1mCitizen Load (0.000296)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 4) [0m
+  [4;35;1mSQL (0.000530)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing CitizensController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"citizens", "citizen"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>"quire", "email"=>"quire@example.com"}}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mSQL (0.000125)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quire') [0m
+  [4;35;1mSQL (0.000094)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quire@example.com') [0m
+  [4;36;1mCitizen Create (0.000467)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '2152d979192a63c3faa12578e8e7f34d3ba94dc2', '2008-10-21 17:18:54', NULL, '90aab2a788d7807a5a43e57bc9915cbce3240b9f', NULL, 'd563781d12a3a5175df2ee9402b72dddb63ae282', NULL, 'quire', 'quire@example.com', '2008-10-21 17:18:54')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 21 Oct 2008 15:18:54 -0200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire69
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/d563781d12a3a5175df2ee9402b72dddb63ae282
+Redirected to http://test.host/
+Completed in 0.00739 (135 reqs/sec) | DB: 0.00151 (20%) | 302 Found [http://test.host/register?citizen%5Bemail%5D=quire%40example.com&citizen%5Blogin%5D=quire&citizen%5Bpassword%5D=quire69&citizen%5Bpassword_confirmation%5D=quire69]
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT count(*) AS count_all FROM "citizens" [0m
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00342 (292 reqs/sec) | Rendering: 0.00022 (6%) | DB: 0.00017 (4%) | 200 OK [http://test.host/]
+
+
+Processing UrboController#index (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00042 (2392 reqs/sec) | Rendering: 0.00016 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/]
+Rendering /citizens/show.html.erb
+
+
+Processing AccessControlTestController#login_is_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"json", "action"=>"login_is_required", "controller"=>"access_control_test"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0.00072 (1381 reqs/sec) | Rendering: 0.00006 (8%) | DB: 0.00000 (0%) | 401 Unauthorized [http://test.host/access_control_test/login_is_required?format=json]
+
+
+Processing AccessControlTestController#login_not_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"json", "action"=>"login_not_required", "controller"=>"access_control_test"}
+Completed in 0.00334 (299 reqs/sec) | Rendering: 0.00015 (4%) | DB: 0.00000 (0%) | 200 OK [http://test.host/login_not_required?format=json]
+  [4;36;1mCitizen Load (0.000415)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing AccessControlTestController#login_is_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"json", "action"=>"login_is_required", "controller"=>"access_control_test"}
+  [4;35;1mCitizen Load (0.000317)[0m   [0mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+Completed in 0.00148 (674 reqs/sec) | Rendering: 0.00012 (7%) | DB: 0.00073 (49%) | 200 OK [http://test.host/access_control_test/login_is_required?format=json]
+  [4;36;1mCitizen Load (0.000337)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing AccessControlTestController#login_not_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"json", "action"=>"login_not_required", "controller"=>"access_control_test"}
+Completed in 0.00064 (1567 reqs/sec) | Rendering: 0.00011 (17%) | DB: 0.00034 (52%) | 200 OK [http://test.host/login_not_required?format=json]
+
+
+Processing AccessControlTestController#login_is_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"xml", "action"=>"login_is_required", "controller"=>"access_control_test"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0.00066 (1517 reqs/sec) | Rendering: 0.00006 (8%) | DB: 0.00000 (0%) | 401 Unauthorized [http://test.host/access_control_test/login_is_required?format=xml]
+
+
+Processing AccessControlTestController#login_not_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"xml", "action"=>"login_not_required", "controller"=>"access_control_test"}
+Completed in 0.00090 (1108 reqs/sec) | Rendering: 0.00034 (37%) | DB: 0.00000 (0%) | 200 OK [http://test.host/login_not_required?format=xml]
+  [4;35;1mCitizen Load (0.000361)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing AccessControlTestController#login_is_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"xml", "action"=>"login_is_required", "controller"=>"access_control_test"}
+  [4;36;1mCitizen Load (0.000297)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+Completed in 0.00164 (608 reqs/sec) | Rendering: 0.00023 (13%) | DB: 0.00066 (40%) | 200 OK [http://test.host/access_control_test/login_is_required?format=xml]
+  [4;35;1mCitizen Load (0.000339)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing AccessControlTestController#login_not_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"xml", "action"=>"login_not_required", "controller"=>"access_control_test"}
+Completed in 0.00074 (1355 reqs/sec) | Rendering: 0.00022 (29%) | DB: 0.00034 (45%) | 200 OK [http://test.host/login_not_required?format=xml]
+
+
+Processing AccessControlTestController#login_is_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"", "action"=>"login_is_required", "controller"=>"access_control_test"}
+Redirected to http://test.host/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0.00056 (1785 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/access_control_test/login_is_required?format=]
+
+
+Processing AccessControlTestController#login_not_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"", "action"=>"login_not_required", "controller"=>"access_control_test"}
+Completed in 0.00061 (1642 reqs/sec) | Rendering: 0.00006 (9%) | DB: 0.00000 (0%) | 200 OK [http://test.host/login_not_required?format=]
+  [4;36;1mCitizen Load (0.000411)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing AccessControlTestController#login_is_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"", "action"=>"login_is_required", "controller"=>"access_control_test"}
+  [4;35;1mCitizen Load (0.000285)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+Completed in 0.00141 (708 reqs/sec) | Rendering: 0.00006 (3%) | DB: 0.00070 (49%) | 200 OK [http://test.host/access_control_test/login_is_required?format=]
+  [4;36;1mCitizen Load (0.000340)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing AccessControlTestController#login_not_required (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"format"=>"", "action"=>"login_not_required", "controller"=>"access_control_test"}
+Completed in 0.00062 (1600 reqs/sec) | Rendering: 0.00006 (9%) | DB: 0.00034 (54%) | 200 OK [http://test.host/login_not_required?format=]
+Rendering /urbo/index.html.erb
+Rendering /urbo/index.html.erb
+  [4;35;1mCitizen Load (0.000357)[0m   [0mSELECT * FROM "citizens" LIMIT 1[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;35;1mSQL (0.000075)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;36;1mCitizen Update (0.000317)[0m   [0;1mUPDATE "citizens" SET "remember_token" = 'hello!', "remember_token_expires_at" = '2008-10-21 17:23:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.000090)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;35;1mCitizen Update (0.000081)[0m   [0mUPDATE "citizens" SET "remember_token_expires_at" = '2008-10-21 17:13:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000268)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."remember_token" = 'hello!') LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000477)[0m   [0mSELECT * FROM "citizens" LIMIT 1[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;35;1mSQL (0.000153)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;36;1mCitizen Update (0.000385)[0m   [0;1mUPDATE "citizens" SET "remember_token" = 'hello!', "remember_token_expires_at" = '2008-10-21 17:23:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.000136)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;35;1mCitizen Update (0.000112)[0m   [0mUPDATE "citizens" SET "remember_token" = NULL, "remember_token_expires_at" = NULL, "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000456)[0m   [0;1mSELECT * FROM "citizens" LIMIT 1[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;36;1mSQL (0.000076)[0m   [0;1mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;35;1mCitizen Update (0.000268)[0m   [0mUPDATE "citizens" SET "remember_token" = 'hello!', "remember_token_expires_at" = '2008-10-21 17:23:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000100)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."remember_token" = 'i_haxxor_joo') LIMIT 1[0m
+  [4;35;1mCitizen Load (0.000489)[0m   [0mSELECT * FROM "citizens" LIMIT 1[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'quentin' AND "citizens".id <> 1) [0m
+  [4;35;1mSQL (0.000074)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'quentin@example.com' AND "citizens".id <> 1) [0m
+  [4;36;1mCitizen Update (0.000318)[0m   [0;1mUPDATE "citizens" SET "remember_token" = 'hello!', "remember_token_expires_at" = '2008-10-21 17:23:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000276)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."remember_token" = 'hello!') LIMIT 1[0m
+  [4;36;1mCitizen Update (0.000084)[0m   [0;1mUPDATE "citizens" SET "remember_token" = 'e537de2be8d268e72c97d22f22d4b47c697a77c2', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000441)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000288)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+  [4;35;1mCitizen Update (0.000292)[0m   [0mUPDATE "citizens" SET "remember_token" = '92778498fb42c533453977d26d94f4a30c0eccb5', "remember_token_expires_at" = '2008-11-04 17:18:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000271)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000257)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Update (0.000102)[0m   [0;1mUPDATE "citizens" SET "remember_token" = NULL, "remember_token_expires_at" = NULL, "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000325)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000268)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000354)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000332)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000313)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000348)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000402)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+  [4;35;1mCitizen Update (0.000313)[0m   [0mUPDATE "citizens" SET "remember_token" = 'e3ca1c9894c86ccb400e8b35f5526c5a5c185a4f', "remember_token_expires_at" = '2008-11-04 17:18:54', "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;36;1mCitizen Load (0.000265)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000258)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Update (0.000086)[0m   [0;1mUPDATE "citizens" SET "remember_token" = NULL, "remember_token_expires_at" = NULL, "updated_at" = '2008-10-21 17:18:54' WHERE "id" = 1[0m
+  [4;35;1mCitizen Load (0.000263)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000252)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000362)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000313)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;35;1mCitizen Load (0.000305)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+  [4;36;1mCitizen Load (0.000322)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00312 (320 reqs/sec) | Rendering: 0.00025 (8%) | DB: 0.01218 (390%) | 200 OK [http://test.host/login]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00040 (2505 reqs/sec) | Rendering: 0.00017 (41%) | DB: 0.00000 (0%) | 200 OK [http://test.host/login]
+  [4;35;1mCitizen Load (0.000383)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00031 (3175 reqs/sec) | DB: 0.00038 (121%) | 302 Found [http://test.host/logout]
+  [4;36;1mCitizen Load (0.000383)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-10-21 15:18:54) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://test.host/
+Completed in 0.00018 (5497 reqs/sec) | DB: 0.00038 (210%) | 302 Found [http://test.host/logout]
+  [4;35;1mCitizen Load (0.000375)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"FROBNOZZ"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Failed login for 'quentin' from 0.0.0.0 at Tue Oct 21 17:18:54 UTC 2008
+Rendering sessions/new
+Completed in 0.00074 (1358 reqs/sec) | Rendering: 0.00022 (29%) | DB: 0.00038 (50%) | 200 OK [http://test.host/session?login=quentin&password=FROBNOZZ]
+  [4;36;1mCitizen Load (0.000378)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Failed login for 'quentin' from 0.0.0.0 at Tue Oct 21 17:18:54 UTC 2008
+Rendering sessions/new
+Completed in 0.00068 (1468 reqs/sec) | Rendering: 0.00020 (29%) | DB: 0.00038 (55%) | 200 OK [http://test.host/session?login=quentin&password=test]
+  [4;35;1mCitizen Load (0.000362)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Failed login for 'quentin' from 0.0.0.0 at Tue Oct 21 17:18:54 UTC 2008
+Rendering sessions/new
+Completed in 0.00067 (1489 reqs/sec) | Rendering: 0.00019 (27%) | DB: 0.00036 (53%) | 200 OK [http://test.host/session?login=quentin&password=test]
+  [4;36;1mCitizen Load (0.000335)[0m   [0;1mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Failed login for 'quentin' from 0.0.0.0 at Tue Oct 21 17:18:54 UTC 2008
+Rendering sessions/new
+Completed in 0.00062 (1615 reqs/sec) | Rendering: 0.00018 (29%) | DB: 0.00033 (54%) | 200 OK [http://test.host/session?login=quentin&password=test]
+  [4;35;1mCitizen Load (0.000318)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) [0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+Failed login for 'quentin' from 0.0.0.0 at Tue Oct 21 17:18:54 UTC 2008
+Rendering sessions/new
+Completed in 0.00052 (1923 reqs/sec) | Rendering: 0.00018 (34%) | DB: 0.00032 (61%) | 200 OK [http://test.host/session?login=quentin&password=test]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00045 (2222 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00043 (2319 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00042 (2380 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00041 (2457 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2816 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00027 (3731 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00040 (2519 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00043 (2352 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00041 (2414 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00040 (2487 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00042 (2398 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00043 (2331 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00042 (2392 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00041 (2445 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00042 (2375 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2644 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00028 (3634 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2513 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2493 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2495 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2666 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00052 (1938 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00053 (1872 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00042 (2375 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2763 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00035 (2882 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00046 (2155 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00029 (3412 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00039 (2577 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2794 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00041 (2468 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00039 (2597 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2611 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2487 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2605 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2651 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2531 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00033 (3039 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00028 (3545 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00036 (2785 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00036 (2777 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00037 (2732 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00034 (2959 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00043 (2319 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00037 (2709 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2746 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2807 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2816 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00032 (3134 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00031 (3276 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2792 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00037 (2681 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00035 (2847 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00034 (2939 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00037 (2695 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00036 (2753 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00037 (2739 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2525 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2652 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00031 (3216 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00033 (3004 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00035 (2890 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00035 (2874 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2631 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00033 (3050 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00040 (2519 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00038 (2598 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00036 (2777 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00035 (2832 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00035 (2874 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00030 (3334 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00027 (3701 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:54) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00037 (2739 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00038 (2646 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00039 (2584 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+Redirected to http://test.host/
+Completed in 0.00034 (2959 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00042 (2404 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00039 (2557 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00039 (2563 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00039 (2551 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00037 (2688 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00037 (2718 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00029 (3506 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00037 (2680 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00040 (2531 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00038 (2618 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-10-21 15:18:55) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+Redirected to http://test.host/
+Completed in 0.00035 (2880 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+Rendering /citizens/edit.html.erb
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: e9b87e39776b1e323778eb553d025e49
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00367 (272 reqs/sec) | Rendering: 0.00123 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: f3821bccdecaf3632e4f57cb7cc946b7
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00063 (1575 reqs/sec) | Rendering: 0.00050 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00420 (237 reqs/sec) | Rendering: 0.00182 (43%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: 720e55cf72ce08fe2b3aeff150601bb1
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00071 (1410 reqs/sec) | Rendering: 0.00055 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00106 (946 reqs/sec) | Rendering: 0.00096 (90%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000128)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000079)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000467)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '1d24fd039bc61739ec7d974d2efee586930b3327', '2008-10-21 17:44:20', NULL, 'e2e91e03de19f32b1b53e69998658ffc6a5aa3f7', NULL, 'ebcfbb87211477ed0e9c68d6ca0eb260d5ee4149', NULL, 'schouery', 'valid@email.com', '2008-10-21 17:44:20')[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 15:44:20 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/ebcfbb87211477ed0e9c68d6ca0eb260d5ee4149
+  [4;35;1mCitizen Update (0.000161)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 17:44:20', "activation_code" = NULL, "updated_at" = '2008-10-21 17:44:20' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 15:44:20 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"123456", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 15:44:20) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"123456"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000386)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://www.example.com/
+Completed in 0.00194 (516 reqs/sec) | DB: 0.00122 (62%) | 302 Found [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoPY2l0aXplbl9pZGkGIgpmbGFzaElDOidBY3Rp
+b25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9n
+Z2VkIGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY=--631ae0eea3fa8b9cdb31fbe874d482a4b802598e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00071 (1402 reqs/sec) | Rendering: 0.00056 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;35;1mCitizen Load (0.000335)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: aeae92f4cc47917ef2864870b548d51c
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00086 (1158 reqs/sec) | Rendering: 0.00067 (77%) | DB: 0.00033 (38%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00147 (681 reqs/sec) | Rendering: 0.00132 (89%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000255)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000076)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000339)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '518c4a657e15cec0b02ace2e8c07789255078e29', '2008-10-21 17:44:20', NULL, '69847e1fc16b1f80bd4cb19550defca18927c9c2', NULL, '96a4e06e6f8387d2db7f10ac3d6b31d10a534e54', NULL, 'schouery', 'valid@email.com', '2008-10-21 17:44:20')[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 15:44:20 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/96a4e06e6f8387d2db7f10ac3d6b31d10a534e54
+  [4;35;1mCitizen Update (0.000115)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-21 17:44:20', "activation_code" = NULL, "updated_at" = '2008-10-21 17:44:20' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Tue, 21 Oct 2008 15:44:20 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"654321", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-21 15:44:20) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"654321"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000363)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery' from 127.0.0.1 at Tue Oct 21 17:44:20 UTC 2008
+Rendering sessions/new
+Completed in 0.00221 (451 reqs/sec) | Rendering: 0.00102 (46%) | DB: 0.00115 (51%) | 200 OK [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-21 15:44:20) [GET]
+  Session ID: 12517a0946db82f08169c7d7c93b2e0e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00086 (1162 reqs/sec) | Rendering: 0.00065 (75%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
