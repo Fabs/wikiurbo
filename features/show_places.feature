@@ -4,21 +4,20 @@ Feature: Creating Places
 	So I can record information about it
 							
 	Scenario: User logged in creates a place
-		Given I'm logged in
-		And at page "/places/new"
-		When I fill the form
-		And hit submit
-		Then I should see the show place page
+		Given that I am logged in
+		And that I am at page "/places/new"
+		When I fill in "Name" with "Brazil"
+		And I press "submit"
+		Then I should see "Brazil"
 
 	Scenario: User not logged in can't create place
-	 	Given I'm not logged in
-		And at page "/places/new"
-		Then I should see "Please Login or Signup"
-		And I should see "Login" link
-		And I should see "Signup" link
+	 	Given that I am not logged in
+		And that I am at page "/places/new"
+		Then I should not be able to create the place
 	
 	Scenario: User logged in access a place that exists but wants to create a new one
-		Given that I'm at a show place page
+		Given that Place 1 exists
+		And that I am at page "/places/1"
 		When I follow "Create subplace"
 		Then I should see a create place page
 		And it should know what is the parent place
