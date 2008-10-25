@@ -9,6 +9,7 @@ Feature: Creating Places
 		When I fill in "Name" with "Brazil"
 		And I press "submit"
 		Then I should see "Brazil"
+		And the coordinates should be lat -14.235004 and lang -51.92528
 
 	Scenario: User not logged in can't create place
 	 	Given that I am not logged in

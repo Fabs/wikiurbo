@@ -42454,3 +42454,609 @@ Rendering places/index
 Completed in 0.00057 (1748 reqs/sec) | Rendering: 0.00015 (25%) | DB: 0.00000 (0%) | 200 OK [http://test.host/places]
 Rendering /places/show.html.erb
 Rendering /places/show.html.erb
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: 3e3d256caeb0dd1be62120b1c5d0c1a3
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00756 (132 reqs/sec) | Rendering: 0.00339 (44%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: 9fc7db5721c166cdffbc215de52dae28
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00104 (965 reqs/sec) | Rendering: 0.00079 (76%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00747 (133 reqs/sec) | Rendering: 0.00301 (40%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: ca00601f0f49f90219ccccc56fd7a94b
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00077 (1295 reqs/sec) | Rendering: 0.00060 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00118 (845 reqs/sec) | Rendering: 0.00106 (89%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000116)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000083)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000387)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '327f2a6c0ddb3ae9b37215fc8f4a6b143ebef75c', '2008-10-22 10:47:17', NULL, 'dc7fe4058d12d31e4e3d3642a7ec1fa8ef19890a', NULL, '0bc27cc7baff93f05ec78d78e396be2987706a41', NULL, 'schouery', 'valid@email.com', '2008-10-22 10:47:17')[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:47:17 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/0bc27cc7baff93f05ec78d78e396be2987706a41
+  [4;35;1mCitizen Update (0.000203)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-22 10:47:17', "activation_code" = NULL, "updated_at" = '2008-10-22 10:47:17' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:47:17 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"123456", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-22 08:47:17) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"123456"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000382)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://www.example.com/
+Completed in 0.00193 (517 reqs/sec) | DB: 0.00117 (60%) | 302 Found [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoPY2l0aXplbl9pZGkGIgpmbGFzaElDOidBY3Rp
+b25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9n
+Z2VkIGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY=--631ae0eea3fa8b9cdb31fbe874d482a4b802598e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00077 (1296 reqs/sec) | Rendering: 0.00061 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;35;1mCitizen Load (0.000357)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: 5e1dbaddac00d872a10b709b30ca80d1
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00076 (1317 reqs/sec) | Rendering: 0.00059 (77%) | DB: 0.00036 (47%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00122 (819 reqs/sec) | Rendering: 0.00111 (90%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000202)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000068)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000348)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '9691241e0cf891cbd928847cb17f37da2eb6a0e3', '2008-10-22 10:47:17', NULL, 'fd93574732c7202b12c231e9f3da97b4441e2947', NULL, '52e17d36c1d709cc0f17f15aee0ce67e28f632ff', NULL, 'schouery', 'valid@email.com', '2008-10-22 10:47:17')[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:47:17 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/52e17d36c1d709cc0f17f15aee0ce67e28f632ff
+  [4;35;1mCitizen Update (0.000114)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-22 10:47:17', "activation_code" = NULL, "updated_at" = '2008-10-22 10:47:17' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:47:17 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"654321", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-22 08:47:17) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"654321"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000410)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery' from 127.0.0.1 at Wed Oct 22 10:47:17 UTC 2008
+Rendering sessions/new
+Completed in 0.00260 (385 reqs/sec) | Rendering: 0.00112 (43%) | DB: 0.00114 (43%) | 200 OK [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: 7404633d692ae35fa41e1c0022dc89c2
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00078 (1283 reqs/sec) | Rendering: 0.00061 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: 16be0c17b13275c33f9769f0fbc8bdea
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00276 (362 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: f9394ce688a8538d0ab287b05cccbd2e
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00019 (5349 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+  [4;35;1mPlace Create (0.000335)[0m   [0mINSERT INTO "places" ("updated_at", "created_at") VALUES('2008-10-22 10:47:17', '2008-10-22 10:47:17')[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: 55048f70668a8f44a8852cddc1d2c047
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"places"}
+  [4;36;1mPlace Load (0.000248)[0m   [0;1mSELECT * FROM "places" WHERE ("places"."id" = 1) [0m
+Rendering places/show
+Completed in 0.00214 (466 reqs/sec) | Rendering: 0.00089 (41%) | DB: 0.00058 (27%) | 200 OK [http://www.example.com/places/1]
+REQUESTING PAGE: GET /places/new with {}
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00025 (3983 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:47:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00139 (717 reqs/sec) | Rendering: 0.00129 (92%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: 23e7424a79e477a30202ab8c14cd219a
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00442 (226 reqs/sec) | Rendering: 0.00148 (33%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: 54600dc8f35ab9f00e88af3c947bd428
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00074 (1360 reqs/sec) | Rendering: 0.00057 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00467 (214 reqs/sec) | Rendering: 0.00201 (43%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: aefa48c7d89ccc48028aa17fdc8f56d0
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00073 (1366 reqs/sec) | Rendering: 0.00057 (77%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00104 (964 reqs/sec) | Rendering: 0.00094 (90%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000106)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000076)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000434)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '820f8d6d2cff1a6b405216855fc3251d71009094', '2008-10-22 10:50:07', NULL, 'df260036c1cf12d425972693d4fce38061caf969', NULL, 'acab363043d1e5c03e0ad8473853b28af6a49562', NULL, 'schouery', 'valid@email.com', '2008-10-22 10:50:07')[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:50:07 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/acab363043d1e5c03e0ad8473853b28af6a49562
+  [4;35;1mCitizen Update (0.000227)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-22 10:50:07', "activation_code" = NULL, "updated_at" = '2008-10-22 10:50:07' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:50:07 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"123456", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-22 08:50:07) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"123456"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000398)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://www.example.com/
+Completed in 0.00194 (515 reqs/sec) | DB: 0.00124 (63%) | 302 Found [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoPY2l0aXplbl9pZGkGIgpmbGFzaElDOidBY3Rp
+b25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9n
+Z2VkIGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY=--631ae0eea3fa8b9cdb31fbe874d482a4b802598e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00077 (1291 reqs/sec) | Rendering: 0.00061 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;35;1mCitizen Load (0.000406)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: 1daad7b79bc8c21acbaa421e77ad5d96
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00080 (1246 reqs/sec) | Rendering: 0.00061 (75%) | DB: 0.00041 (50%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00121 (826 reqs/sec) | Rendering: 0.00108 (89%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000200)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000068)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000305)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '78d65e9563c3f78f7d7f160634b5fc8b91390c92', '2008-10-22 10:50:07', NULL, '26411612864605984e43fff06f8325bf485293ca', NULL, 'ad7fa2729316af1514339f876dd3e4217305db74', NULL, 'schouery', 'valid@email.com', '2008-10-22 10:50:07')[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:50:07 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/ad7fa2729316af1514339f876dd3e4217305db74
+  [4;35;1mCitizen Update (0.000110)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-22 10:50:07', "activation_code" = NULL, "updated_at" = '2008-10-22 10:50:07' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:50:07 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"654321", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-22 08:50:07) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"654321"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000383)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery' from 127.0.0.1 at Wed Oct 22 10:50:07 UTC 2008
+Rendering sessions/new
+Completed in 0.00253 (394 reqs/sec) | Rendering: 0.00123 (48%) | DB: 0.00107 (42%) | 200 OK [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: 4c0a17ac68e375aaa9a05adf31646822
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00079 (1265 reqs/sec) | Rendering: 0.00059 (74%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: b7f47eeef74e537968f68d02c83a0431
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00275 (363 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: 869515a349744f632f39c7266a460acf
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00019 (5236 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+  [4;35;1mPlace Create (0.000385)[0m   [0mINSERT INTO "places" ("updated_at", "created_at") VALUES('2008-10-22 10:50:07', '2008-10-22 10:50:07')[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: d0d03a65ee6af516a37008d381cf61e6
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"places"}
+  [4;36;1mPlace Load (0.000198)[0m   [0;1mSELECT * FROM "places" WHERE ("places"."id" = 1) [0m
+Rendering places/show
+Completed in 0.00193 (518 reqs/sec) | Rendering: 0.00090 (46%) | DB: 0.00058 (30%) | 200 OK [http://www.example.com/places/1]
+REQUESTING PAGE: GET /places/new with {}
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00022 (4544 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00131 (763 reqs/sec) | Rendering: 0.00120 (91%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: bdf97a0c8eb41b99200ca5dc2408531c
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00439 (228 reqs/sec) | Rendering: 0.00150 (34%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: 2d0c36743619574c9336d9a094df1d9c
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00073 (1371 reqs/sec) | Rendering: 0.00057 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00473 (211 reqs/sec) | Rendering: 0.00202 (42%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: 0e35795893b9c08f0410c14879896647
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00087 (1151 reqs/sec) | Rendering: 0.00068 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00114 (874 reqs/sec) | Rendering: 0.00104 (91%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000105)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000076)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000407)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '8c9fd65bc2e3cd9575be743c341934d9da700154', '2008-10-22 10:55:10', NULL, '92700a2c1bfd083ab67ac4e0019392ffaeb37d3f', NULL, '2cba9a2e222c9503756ae0da0fa5735ab92a90ac', NULL, 'schouery', 'valid@email.com', '2008-10-22 10:55:10')[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:55:10 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/2cba9a2e222c9503756ae0da0fa5735ab92a90ac
+  [4;35;1mCitizen Update (0.000144)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-22 10:55:10', "activation_code" = NULL, "updated_at" = '2008-10-22 10:55:10' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:55:10 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"123456", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-22 08:55:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"123456"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000388)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Cookie set: auth_token=; path=/
+Redirected to http://www.example.com/
+Completed in 0.00200 (500 reqs/sec) | DB: 0.00112 (56%) | 302 Found [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoPY2l0aXplbl9pZGkGIgpmbGFzaElDOidBY3Rp
+b25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9n
+Z2VkIGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY=--631ae0eea3fa8b9cdb31fbe874d482a4b802598e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00077 (1293 reqs/sec) | Rendering: 0.00061 (78%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+  [4;35;1mCitizen Load (0.000348)[0m   [0mSELECT * FROM "citizens" WHERE ("citizens"."id" = 1) LIMIT 1[0m
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:55:10) [GET]
+  Session ID: 3b47fafc5245a80788ab3c8da7479c1e
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00076 (1319 reqs/sec) | Rendering: 0.00059 (77%) | DB: 0.00035 (45%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /login with {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00112 (889 reqs/sec) | Rendering: 0.00101 (90%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
+  [4;36;1mSQL (0.000199)[0m   [0;1mSELECT "login" FROM "citizens" WHERE ("citizens".login = 'schouery') [0m
+  [4;35;1mSQL (0.000068)[0m   [0mSELECT "email" FROM "citizens" WHERE ("citizens".email = 'valid@email.com') [0m
+  [4;36;1mCitizen Create (0.000308)[0m   [0;1mINSERT INTO "citizens" ("name", "salt", "updated_at", "activated_at", "crypted_password", "remember_token_expires_at", "activation_code", "remember_token", "login", "email", "created_at") VALUES('', '6eca4394612681fe81ae205566f3deba5e89a7a0', '2008-10-22 10:55:11', NULL, 'd043e79d113920dcfd6bc692e11ce919678789ef', NULL, '69972650d91a4acce17a332e479b462b77d6b545', NULL, 'schouery', 'valid@email.com', '2008-10-22 10:55:11')[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:55:11 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: schouery
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/69972650d91a4acce17a332e479b462b77d6b545
+  [4;35;1mCitizen Update (0.000115)[0m   [0mUPDATE "citizens" SET "activated_at" = '2008-10-22 10:55:11', "activation_code" = NULL, "updated_at" = '2008-10-22 10:55:11' WHERE "id" = 1[0m
+Sent mail to valid@email.com
+
+Date: Wed, 22 Oct 2008 08:55:11 -0200
+From: ADMINEMAIL
+To: valid@email.com
+Subject: [YOURSITE] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+schouery, your account has been activated.  Welcome aboard!
+
+  http://YOURSITE/
+REQUESTING PAGE: POST /session with {"commit"=>"Log in", "password"=>"654321", "login"=>"schouery"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-10-22 08:55:11) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"commit"=>"Log in", "action"=>"create", "controller"=>"sessions", "login"=>"schouery", "password"=>"654321"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mCitizen Load (0.000387)[0m   [0;1mSELECT * FROM "citizens" WHERE (login = 'schouery' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'schouery' from 127.0.0.1 at Wed Oct 22 10:55:11 UTC 2008
+Rendering sessions/new
+Completed in 0.00250 (399 reqs/sec) | Rendering: 0.00120 (48%) | DB: 0.00108 (43%) | 200 OK [http://www.example.com/session]
+
+
+Processing UrboController#index (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: 70388f87189b43dfa02550eff6f91b13
+  Parameters: {"action"=>"index", "controller"=>"urbo"}
+Rendering urbo/index
+Completed in 0.00085 (1177 reqs/sec) | Rendering: 0.00065 (76%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: fab8cd0d6ffb3c5a7fb237e6f3dcd37b
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00262 (382 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: 71be640fca80d00a24b0deec8515bdbf
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00019 (5377 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+  [4;35;1mPlace Create (0.000321)[0m   [0mINSERT INTO "places" ("updated_at", "created_at") VALUES('2008-10-22 10:55:11', '2008-10-22 10:55:11')[0m
+
+
+Processing PlacesController#show (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: b8e101cc015c5b0b8022d7a9890129bb
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"places"}
+  [4;36;1mPlace Load (0.000207)[0m   [0;1mSELECT * FROM "places" WHERE ("places"."id" = 1) [0m
+Rendering places/show
+Completed in 0.00182 (547 reqs/sec) | Rendering: 0.00081 (44%) | DB: 0.00053 (28%) | 200 OK [http://www.example.com/places/1]
+REQUESTING PAGE: GET /places/new with {}
+
+
+Processing PlacesController#new (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"places"}
+Redirected to http://www.example.com/login
+Completed in 0.00021 (4809 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://www.example.com/places/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-10-22 08:55:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2cf03732ad82e35ff53113b93e570ab2aae6851d
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00111 (903 reqs/sec) | Rendering: 0.00102 (91%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/login]
